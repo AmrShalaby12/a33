@@ -1,0 +1,213 @@
+:root {
+    --text-main-color: #ffff;
+    --text-secondary-color: #0e0e0e;
+    --background-main-color: rgb(255, 255, 255);
+    --background-secondary-color: #343434;
+    --cards-color: #f4f4f4;
+    --main-color: #f6b921;
+    --shadow-first-background-color: #000000c8;
+    --shadow-second-background-color: #000000a8;
+    --transation: 0.3s;
+    --margin-top-large: 70px;
+    --margin-top-small: 75px;
+    --border-radius: 8px;
+}
+.allSwiper{
+  background-color:var(--cards-color) ;
+}
+section {
+  width: 99%;
+  min-height: 63vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden !important;
+}
+
+.swiper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 55px !important;
+  z-index: 1;
+}
+
+.swiper-slide {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  filter: blur(1px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+  overflow: hidden;
+}
+
+.swiper-slide-active {
+  filter: blur(0px);
+}
+
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #ffc800;
+}
+.swiper-slide {
+  flex-shrink: 0;
+  width:40vh !important;
+  height: 50vh !important;
+  position: relative;
+  transition-property: transform;
+}
+
+.swiper-slide span {
+  text-transform: uppercase;
+  color: #fff;
+  background: #1b7402;
+  padding: 7px 18px 7px 25px;
+  display: inline-block;
+  border-radius: 0 20px 20px 0px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
+}
+
+.swiper-slide--one span {
+  background: #62667f;
+  margin-bottom: 10px;
+}
+
+.swiper-slide--two span {
+  background: #087ac4;
+  margin-bottom: 10px;
+}
+
+.swiper-slide--three span {
+  background: #b45205;
+  margin-bottom: 10px;
+}
+
+.swiper-slide--four span {
+  background: #087ac4;
+  margin-bottom: 10px;
+}
+
+.swiper-slide h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  padding: 25px 45px 0 25px;
+}
+
+.swiper-slide p {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  padding: 0 25px 35px 25px;
+}
+
+
+section p {
+  position: absolute;
+  inset: auto auto 30px 400px;
+  margin-left: 5px;
+  transition: inset .3s .3s ease-out;
+  font-weight: normal;
+  }
+
+section h2 {
+position: absolute;
+inset: auto auto -30px 500px;
+margin-left: 5px;
+transition: inset .3s .3s ease-out;
+font-family: 'Roboto Condensed', sans-serif;
+font-weight: normal;
+font-size: 25px;
+
+}
+.board{
+  text-align: center;
+  font-weight: 900 !important;
+  color: var(--main-color);
+  font-size: 2rem !important;
+  padding-top: 12px;
+
+}
+  section h3 {
+  position: absolute;
+  inset: auto auto -40px 500px !important;
+  margin-left: 5px;
+  transition: inset .3s .3s ease-out;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  }
+.content{
+  background-color: #f4f4f456;
+  text-align: center;
+  width: 29vh;
+      }
+
+  &:hover  section p {
+      margin-left: 35px;
+      inset: auto auto 120px ;
+      transition: inset .3s ease-out;
+      
+      }
+&:hover  section .h2 {
+margin-left: 35px;
+inset: auto auto 90px ;
+transition: inset .3s ease-out;
+
+}
+&:hover section h3 {
+  margin-left: 35px;
+  inset: auto auto 66px ;
+  transition: inset .3s ease-out;
+  
+  }
+.swiper-slide--one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("images/r.jpeg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("images/shahd2.jpeg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://images.unsplash.com/photo-1650367310179-e1b5b8e453c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://images.unsplash.com/photo-1650367310179-e1b5b8e453c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--five {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("images/taher.jpeg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
